@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendations</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url("back2.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* This keeps the background image static */
+      }
+      .recommend {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 5%;
+      }
+
+      .ratings {
+        display: flex;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .ratinghead {
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .nxtprv {
+        display: flex;
+      }
+
+      .prev1 {
+        margin-left: 7%;
+      }
+      .card1 {
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+      }
+      .card2 {
+        display: inline-block;
+      }
+      .button1 {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+           
+  
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+            <img src="LOGO.png" alt="" height="30px" style="margin-right:40px ;">
+            
+              <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+              
+              
+            </ul>
+  
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input
+                type="search"
+                class="form-control form-control-dark text-bg-dark"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+  
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">
+                Login
+              </button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+    <div class="card1">
+      <div class="card" style="width: 18rem">
+        <div class="card2" style="display: inline-flex;">
+         <divsyu>
+          <img src="examposter.png" class="card-img-top" alt="..." />
+         </div>
+         <div class="card-body">
+          <h5 class="card-title">Once Upon A Time in Hollywood</h5>
+          <p class="card-text">
+            A faded television actor and his stunt double strive to achieve fame
+            and success in the final years of Hollywood's Golden Age in 1969 Los
+            Angeles
+          </p>
+          <div class="button1">
+            <div style="margin: 10px">
+              <a href="#" class="btn btn-outline-warning">Stream </a>
+            </div>
+            <div style="margin: 10px">
+              <a href="#" class="btn btn-warning">imdb</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div style="display: flex; justify-content: center; margin: 10%">
+      <button type="button" class="btn btn-warning btn-primary btn-lg">Randomize</button>
+    </div>
+
+    <div class="nxtprv">
+      <div class="prev1">
+        <button
+          onclick="window.location.href='form3.html';"
+          type="button"
+          class="btn btn-outline-warning"
+          fdprocessedid="5b242ez"
+        >
+          Prev
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <p class="text-body-secondary">© 2023</p>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          
+        </div>
+
+        <div class="col mb-3">
+          <h5>Contact Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="https://www.linkedin.com/in/mudit-sharma-269a2b248/" class="nav-link p-0 text-body-secondary">Mudit Sharma</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="https://www.linkedin.com/in/ammar-taiyab-67b80924b/?originalSubdomain=in" class="nav-link p-0 text-body-secondary">Ammar Taiyab</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Websites</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="https://www.imdb.com/" class="nav-link p-0 text-body-secondary">Imdb</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
